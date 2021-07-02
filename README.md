@@ -6,9 +6,13 @@ End points
 
 Parametros endpoint /donos
 1. String nome = Nome do dono
+2. int limit = Limite de registros
+3. int skip = Registros que serão ignorados
 
 Parametros endpoint /cartoes
 1. String bin = numero cartao de credito
+2. int limit = Limite de registros
+3. int skip = Registros que serão ignorados
 ##
 
 Libs
@@ -16,9 +20,17 @@ Libs
 2. axios para realizar requests http  
 ##
 
+Metodos
+1. GET
+2. POST
+3. PUT
+4. DELETE 
+##
+
 # Exemplo de api Donos
 GET: https://ppw2-final.herokuapp.com/donos
 Retorno:
+````
 [
   {
     "_id": "60dd1026ad4157272c59f94f",
@@ -31,10 +43,11 @@ Retorno:
     "endereco": "60df858f4e610600159b3b0d"
   }
 ]
-
+````
 # Exemplo de api Cartao
 GET: https://ppw2-final.herokuapp.com/cartoes/?bin=123456
 Retorno:
+````
 [
   {
     "_id": "60dd135c9034ea14945b30cd",
@@ -58,4 +71,5 @@ Retorno:
     "__v": 0
   }
 ]
+````
  
