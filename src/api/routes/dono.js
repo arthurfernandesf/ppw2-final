@@ -42,7 +42,7 @@ route.get('/:id', async(req,res,next) => {
         
         if(dono.endereco && req.query.mostrar==="true") {            
             try {
-                var endereco = await axios.get('http://localhost:3001/enderecos/'+dono.endereco)
+                var endereco = await axios.get('https://projeto-final-gustavo-pr.herokuapp.com/enderecos/'+dono.endereco)
                 if(endereco.status === 200) {
                     dono.endereco = endereco.data  
                 }    
