@@ -15,6 +15,9 @@ Parametros endpoint /cartoes
 3. int skip = Registros que serão ignorados
 ##
 
+Heroku: https://ppw2-final.herokuapp.com
+##
+
 Libs
 1. express como servidor http  
 2. axios para realizar requests http  
